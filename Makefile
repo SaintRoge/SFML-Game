@@ -2,14 +2,14 @@
 
 .SUFFIXES:
 
-app = SFMK-Game
+app = SFML-Game
 lib = -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 CXX = g++
 RM = rm -rf
 SRC = src/
 FLAGS = -std=c++11
 
-all: main.o
+all: main.o game.o
 		$(CXX) $(FLAGS) $^ -o $(app) $(lib)
 		@echo "Finished building: $^"
 		@echo "Build finished. You are ready to use $(app) :-)"
