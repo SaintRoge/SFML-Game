@@ -9,7 +9,7 @@ RM = rm -rf
 SRC = src/
 FLAGS = -std=c++11
 
-all: main.o game.o
+all: main.o game.o board.o
 		$(CXX) $(FLAGS) $^ -o $(app) $(lib)
 		@echo "Finished building: $^"
 		@echo "Build finished. You are ready to use $(app) :-)"
